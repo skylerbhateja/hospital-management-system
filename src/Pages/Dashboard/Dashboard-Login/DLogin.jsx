@@ -53,7 +53,7 @@ const DLogin = () => {
           if (res.message === "Successful") {
             notify("Login Successful");
             setLoading(false);
-            return navigate("/dashboard");
+            // return navigate("/dashboard");
           }
           if (res.message === "Wrong credentials") {
             setLoading(false);
@@ -179,12 +179,12 @@ const DLogin = () => {
               </Radio.Button>
             </Radio.Group>
           </div>
-          <div className="Profileimg">
+          {/* <div className="Profileimg">
             <img src={admin} alt="profile" />
-          </div>
+          </div> */}
           <div>
-            <p>ID - 100</p>
-            <p>Password - masai</p>
+            {/* <p>ID - 100</p>
+            <p>Password - masai</p> */}
             <form onSubmit={HandleSubmit}>
               <h3>{placement} ID</h3>
               <input
